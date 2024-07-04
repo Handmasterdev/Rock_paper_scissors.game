@@ -6,16 +6,25 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <h3 id="title">Rock Paper Scissors</h3>
-    <h3>Computer:</h3>
-    <h3>You:</h3>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button>Scissors</button>
-    <p>Computer choose:</p>
-    <p>You choose:</p>
-    <p>Result:</p>
+    <div id="result_container">
+        <h3 id="robot" >Computer:</h3>
+        <h3 id="player" >You:</h3>
+    </div>
+
+    <div class="button_container">
+        <button onclick="checkResult('rock')"><i class="fa fa-hand-grab-o"></i></button>
+        <button onclick="checkResult('paper')"><i class="fa fa-hand-paper-o"></i></button>
+        <button onclick="checkResult('scissors')"><i class="fa fa-hand-scissors-o"></i></button>
+    </div>
+
+    <div class="text_container">
+        <p id="robot_choise">Computer choose:</p>
+        <p id="user_choices">You choose:</p>
+        <p id="result">Result:</p>
+    </div>
 </body>
 </html>

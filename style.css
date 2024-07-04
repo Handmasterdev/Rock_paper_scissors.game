@@ -1,3 +1,21 @@
-#title{
+body{
+    margin: 50px;
+}
+
+#title, .text_container, .button_container{
     text-align: center;
+}
+
+#result_container{
+    text-align: right;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+   border-radius: 50%;
+   font-size: 50px;
+   border: none;
+   background-color: yellow;
+   padding: 20px;
 }
